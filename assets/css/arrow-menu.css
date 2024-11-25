@@ -1,0 +1,68 @@
+.menu-wrapper {
+    position: relative;
+    height: 42px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.menu {
+    height: 60px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0 2rem;
+    -webkit-overflow-scrolling: touch;
+}
+
+.medical-nav .menu .item {
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.paddle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2.7em;
+    border: none;
+    outline: o;
+    background-color: #ffca08;
+    cursor: pointer;
+}
+
+.paddle:focus {
+    border: 0;
+    outline: 0;
+}
+
+.paddle i {
+    position: absolute;
+    border: #1c1950 3px solid;
+    width: 0.7rem;
+    height: 0.7rem;
+    transform: rotate(45deg);
+    display: inline-block;
+    top: 1rem;
+    border-right: 0;
+    border-top: 0;
+    left: 1.2rem;
+}
+
+.right-paddle {
+    right: 0;
+}
+
+.right-paddle i {
+    transform: rotate(225deg);
+    left: auto;
+    right: 1.2rem;
+}
+
+.left-paddle {
+    left: 0;
+}
+
+.hidden {
+    display: none;
+}
