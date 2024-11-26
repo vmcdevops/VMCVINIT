@@ -88,6 +88,7 @@
             transform: translate(-19%, -35%);
             color: #000;
             text-align: center;
+            background-color: #000;;
         }
         
         .bg-reward::after {
@@ -375,7 +376,7 @@
         
         .click-here {
             background: #e9ecf5;
-            width: 20%;
+            width: 28% !important;
             text-align: center;
             line-height: 32px;
             border-radius: 10px;
@@ -699,13 +700,15 @@ color-mix(in srgb, #e9ecf5, #00000038 96%); */
             -o-transition: all .2s ease-out;
             transition: all .2s ease-out;
             border-radius: 10px;
-            padding: 0.8rem 1.7rem;
+            padding: 0.8rem 0.7rem;
             border: none;
             font-weight: normal;
             z-index: 2;
             background: #fff;
             font-size: 12px;
             text-align: justify;
+            line-height: 19px;
+            font-weight: 300;
         }
         
         .card:hover .btn-foun {
