@@ -113,6 +113,19 @@ color-mix(in srgb, var(--heading-color), transparent 25%);
     border: none;
     background-color: #efeeee !important;
 }
+.main-menu .nav-pills .nav-link.active, .main-menu .nav-pills .show>.nav-link {
+    background-color: transparent;
+    border-bottom: var(--yellow) 4px solid;
+    color: #000;
+}
+.click-here {
+    background: #e9ecf5;
+    width: 26%;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 10px;
+    display: block;
+}
   </style>
 </head>
 <body>
@@ -745,14 +758,14 @@ padding-bottom: 30px !important;">
 
 
               <li class="nav-item">
-                  <a class="nav-link active show" data-toggle="tab" href="#programs"> Our Programs </a>
+                  <a class="nav-link active show" data-bs-toggle="tab" href="#programs"> Our Programs </a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" data-toggle="tab" href="#samplePaper2"> Our Results </a>
+                  <a class="nav-link" data-bs-toggle="tab" href="#samplePaper2"> Our Results </a>
               </li>
 
               <li class="nav-item">
-                  <a class="nav-link" data-toggle="tab" href="#viq-instructions"> VMC Centers  </a>
+                  <a class="nav-link" data-bs-toggle="tab" href="#viq-instructions"> VMC Centers  </a>
               </li>
           </ul>
       </div>
