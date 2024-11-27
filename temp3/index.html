@@ -122,14 +122,30 @@ color-mix(in srgb, var(--heading-color), transparent 25%);
     z-index: 0;
     margin: 0 auto;
 }
+.hero-wrap .slider-text .text {
+    position: relative;
+    z-index: 0;
+    margin-top: 0px !important;
+}
+.slider-text{
+    margin-top: -17px !important;
+}
 }
 @media only screen and (min-width: 768px) {
+    .hero-wrap .slider-text .text {
+    position: relative;
+    z-index: 0;
+    margin-top: 0px !important;
+}
   .ftco-navbar-light .navbar-brand {
     color: #fff;
     padding: 0;
     position: relative;
     z-index: 0;
     margin: 0 auto;
+}
+.slider-text{
+    margin-top: 0px;
 }
 }
 .hero-wrap .overlay {
@@ -210,9 +226,26 @@ color-mix(in srgb, var(--heading-color), transparent 25%);
   </style>
 </head>
 <body>
-    
+    <div class="container-fluid d-block d-sm-none d-md-none d-lg-none" style="background-color: #343362;padding: 10px;">
+        <div class="container">
+            <div class="row justify-content-center">
 
-  <nav class="navbar navbar-expand-lg fixed-top ftco-navbar-light " id="navbar" style="background: #e0e0eb;">
+
+
+                <a class="btn-getstarted" href="tel:9818795768,8585947897" style="text-align: center;
+padding-top: -3px;
+margin-top: 6px;
+color: #fff;
+width: 100%;
+line-height: 26px;
+margin: 0 auto;
+border-radius: 10px;
+margin-top: 0px;"><i class="fas fa-phone"></i> &nbsp; 9818795768 | 8585947897</a>
+            </div>
+        </div>
+    </div> 
+
+  <nav class="navbar navbar-expand-lg  ftco-navbar-light " id="navbar" style="background: #e0e0eb !important;">
     <div class="container">
       <a class="navbar-brand align-items-center" href="">
         <img src="images/vmclogo.png" alt="Logo">
@@ -227,7 +260,7 @@ color-mix(in srgb, var(--heading-color), transparent 25%);
           <li class="nav-item"><a class="nav-link" href="#why">Why VMC</a></li>
           <li class="nav-item"><a class="nav-link" href="#founders">Founders</a></li>
           <li class="nav-item">
-            <a class="nav-link" href="#contactme" style="background: #ffc812;
+            <a class="nav-link" href="register-now.html" style="background: #ffc812;
             border-radius: 10px;
             color: #000;
             margin-top: 19px;
@@ -240,42 +273,12 @@ color-mix(in srgb, var(--heading-color), transparent 25%);
     </div>
   </nav>
 
-  <nav class="navbar navbar-expand-lg fixed-top ftco-navbar-light d-none" id="navbar">
-    <div class="container">
-      <a class="navbar-brand align-items-center" href="">
-       <img src="images/vmc_logo.png"/>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="fa fa-bars"></span> Menu
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#why">Why VMC</a></li>
-          <li class="nav-item"><a class="nav-link" href="#founders">Founders</a></li>
-      
-          <li class="nav-item"><a class="nav-link" href="#contactme" style="    background: #ffc812;
-            border-radius: 10px;
-            line-height: 1px;
-            justify-content: flex-start;
-            align-items: end;
-            align-content: center;
-            align-self: center;
-            justify-items: center;
-            justify-self: baseline;
-            display: block;
-            color: #000;
-            margin-top: 16px;">Register Now</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+ 
 
   <section class="hero-wrap" id="home" style="background-image: url('images/hero-bg-light.webp');">
     <div class="overlay"></div>
     <div class="container">
-      <div class="row no-gutters slider-text align-items-start mt-5">
+      <div class="row no-gutters slider-text align-items-start mt-4">
        <div class="col-lg-7">
         <div class="text mt-5" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
           <p class="mb-4">
@@ -293,7 +296,7 @@ color-mix(in srgb, var(--heading-color), transparent 25%);
             font-family: 'cera regular';
             color: #000;">Vidyamandir Intellect National Incentive Test</h2>
             <p><a href="#" class="btn btn-primary p-4 py-3"  style="    padding: 10px !important;">8<sup>th</sup>, 15<sup>th</sup> & 22<sup>nd</sup> December 2024 <span class="ion-ios-arrow-round-forward"></span></a> <a href="#" class="btn btn-white p-4 py-3 ms-lg-2" style="    padding: 10px !important;">Mega Incentives on FEE <span class="ion-ios-arrow-round-forward"></span></a></p>
-            <p class="social-media mt-5"><a href="#" style=" "><span class="ion-ios-add"></span> Registration Information</a> <a href="#"><span class="ion-ios-add"></span> Syllabus</a> <a href="#"><span class="ion-ios-add"></span> Sample Paper</a></p>
+            <p class="social-media mt-5"><a href="registration-info.html" style=" "><span class="ion-ios-add"></span> Registration Information</a> <a href="test-instructions.html"><span class="ion-ios-add"></span> Test Instructions</a> <a href="vinit-syllabus.html"><span class="ion-ios-add"></span> Sample Paper</a></p>
           </div>
          
         </div>
@@ -441,7 +444,7 @@ color-mix(in srgb, var(--heading-color), transparent 25%);
           <div class="text">
             <h2>Registration Information</h2>
             <p>Here, you will find all the necessary details to guide you through the registration process smoothly.</p>
-            <p class="mt-3"><a href="#" class="mt-2" style="color: #5d5f60;">Read more <span class="fa fa-long-arrow-right"></span></a></p>
+            <p class="mt-3"><a href="registration-info.html" class="mt-2" style="color: #5d5f60;">Read more <span class="fa fa-long-arrow-right"></span></a></p>
           </div>
         </div>
       </div>
@@ -451,7 +454,7 @@ color-mix(in srgb, var(--heading-color), transparent 25%);
           <div class="text">
             <h2>Test Instructions</h2>
             <p>Please read the following guidelines carefully to ensure a smooth and hassle-free testing experience.</p>
-            <p class="mt-3"><a href="#" class="mt-2" style="color: #5d5f60;">Read more <span class="fa fa-long-arrow-right"></span></a></p>
+            <p class="mt-3"><a href="test-instructions.html" class="mt-2" style="color: #5d5f60;">Read more <span class="fa fa-long-arrow-right"></span></a></p>
           </div>
         </div>
       </div>
@@ -461,7 +464,7 @@ color-mix(in srgb, var(--heading-color), transparent 25%);
           <div class="text">
             <h2>Sample Papers</h2>
             <p> Practice is the key to success in any examination, and sample papers are an excellent resource to help you prepare effectively.</p>
-            <p class="mt-3"><a href="#" class="mt-2" style="color: #5d5f60;">Read more <span class="fa fa-long-arrow-right"></span></a></p>
+            <p class="mt-3"><a href="vinit-syllabus.html" class="mt-2" style="color: #5d5f60;">Read more <span class="fa fa-long-arrow-right"></span></a></p>
           </div>
         </div>
       </div>
