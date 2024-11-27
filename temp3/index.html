@@ -223,6 +223,18 @@ color-mix(in srgb, var(--heading-color), transparent 25%);
     border-radius: 10px;
     display: block;
 }
+
+.sticky-bar {
+    position: sticky;
+    bottom: 0; /* Stick to the bottom of the viewport */
+    display: none; /* Initially hidden */
+    z-index: 1050; /* Ensure it stays on top */
+}
+
+/* Show sticky bar after scrolling */
+.show-sticky-bar {
+    display: block !important;
+}
   </style>
 </head>
 <body>
@@ -1092,6 +1104,7 @@ padding-bottom: 30px !important;">
 </main>
 <a href="register-now.html" class="d-block d-sm-none d-md-none d-lg-none btn bg-danger rounded-0 w-100 position-sticky bottom-0 mt-3 text-white" style="    background: #bf0202 !important;"> REGISTER NOW  </a>
 
+
 <footer id="footer" class="footer position-relative light-background" style="padding-bottom: 0px;">
 
 
@@ -1147,6 +1160,19 @@ padding-bottom: 30px !important;">
                 });
             });
         </script>
+
+<script>
+    document.addEventListener("scroll", function () {
+        const stickyBar = document.querySelector(".sticky-bar");
+        const scrollTriggerHeight = 300; // Adjust the scroll trigger height as needed
+
+        if (window.scrollY > scrollTriggerHeight) {
+            stickyBar.classList.add("show-sticky-bar");
+        } else {
+            stickyBar.classList.remove("show-sticky-bar");
+        }
+    });
+</script>
 
     
 </body>
