@@ -17,6 +17,7 @@
     <!-- Favicons -->
     <link href="https://www.vidyamandir.com/favicon.ico" rel="icon">
 
+
   <link rel="preconnect" href="https://fonts.gstatic.com/">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
 
@@ -113,6 +114,86 @@ color-mix(in srgb, var(--heading-color), transparent 25%);
     border: none;
     background-color: #efeeee !important;
 }
+@media (min-width: 320px) and (max-width: 480px) {
+  .ftco-navbar-light .navbar-brand {
+    color: #fff;
+    padding: 0;
+    position: relative;
+    z-index: 0;
+    margin: 0 auto;
+}
+}
+@media only screen and (min-width: 768px) {
+  .ftco-navbar-light .navbar-brand {
+    color: #fff;
+    padding: 0;
+    position: relative;
+    z-index: 0;
+    margin: 0 auto;
+}
+}
+.hero-wrap .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.8;
+    background: #ffffff;
+    z-index: -1;
+}
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+    font-size: 15px;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: rgb(0 0 0 / 70%);
+    font-weight: 500;
+}
+.hero-wrap .slider-text .social-media a {
+    color: #0778e2;
+    margin-right: 15px;
+}
+.btn.btn-primary {
+    background: #19185e !important;
+    border: 1px solid #0779e4 !important;
+    color: #fff !important;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link.activeme {
+    color: #302d5b;
+    position: relative;
+    z-index: 0;
+}
+.hero-wrap .slider-text .subheading {
+    font-weight: 700;
+    color: #0779e4;
+    font-size: 13px;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    background: #ffc812;
+    border-radius: 4px;
+    padding: 4px 9px;
+}
+.hero-wrap .slider-text .subheading:after {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #fec712 transparent transparent transparent;
+}
 .main-menu .nav-pills .nav-link.active, .main-menu .nav-pills .show>.nav-link {
     background-color: transparent;
     border-bottom: var(--yellow) 4px solid;
@@ -126,24 +207,41 @@ color-mix(in srgb, var(--heading-color), transparent 25%);
     border-radius: 10px;
     display: block;
 }
-.clients .client-logo img:hover {
-    filter: none !important;
-    opacity: 1 !important;
-}
-.clients .client-logo img {
-    padding: 20px 40px;
-    max-width: 90%;
-    transition: 0.3s;
-    opacity: 1 !important;
-    filter: none !important;
-}
   </style>
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg fixed-top ftco-navbar-light" id="navbar">
+  <nav class="navbar navbar-expand-lg fixed-top ftco-navbar-light " id="navbar" style="background: #e0e0eb;">
     <div class="container">
-      <a class="navbar-brand align-items-center" href="index-2.html">
+      <a class="navbar-brand align-items-center" href="">
+        <img src="images/vmclogo.png" alt="Logo">
+      </a>
+      <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars"></span> Menu
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#why">Why VMC</a></li>
+          <li class="nav-item"><a class="nav-link" href="#founders">Founders</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactme" style="background: #ffc812;
+            border-radius: 10px;
+            color: #000;
+            margin-top: 19px;
+            padding: 6px;">
+              Register Now
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-expand-lg fixed-top ftco-navbar-light d-none" id="navbar">
+    <div class="container">
+      <a class="navbar-brand align-items-center" href="">
        <img src="images/vmc_logo.png"/>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -173,20 +271,20 @@ color-mix(in srgb, var(--heading-color), transparent 25%);
     </div>
   </nav>
 
-  <section class="hero-wrap" id="home" style="background-image: url('images/bg_1.jpg');">
+  <section class="hero-wrap" id="home" style="background-image: url('images/hero-bg-light.webp');">
     <div class="overlay"></div>
     <div class="container">
       <div class="row no-gutters slider-text align-items-start mt-5">
        <div class="col-lg-7">
         <div class="text mt-5" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
           <p class="mb-4">
-            <img src="images/vinit-date4.png" style="width: 50%;"/>
+            <img src="images/vinit-date3.png" style="width: 50%;"/>
           </p>
-          <span>Fuel Your  </span>
+          <span class="text-dark">Fuel Your  </span>
           <span class="subheading"><span style="color: blue;"> JEE</span>/ <span style="color: red;">NEET</span></span>
-          <span>ambition - Awaken the Winner in You with VINit</span>
+          <span class="text-dark">ambition - Awaken the Winner in You with VINit</span>
           <h1 class="">
-           <img src="images\VINit-Logo-lg.png" style="width: 65%;" />
+           <img src="images\vinit-logo2.png" style="width: 65%;" />
           </h1>
           <div class="w-md-75 w-100">
             <h2 class="mb-4" style="font-size: 22px;
@@ -198,6 +296,9 @@ color-mix(in srgb, var(--heading-color), transparent 25%);
           </div>
          
         </div>
+      </div>
+      <div class="col-md-5">
+        <img src="images/Girl.png"/>
       </div>
     </div>
   </div>
@@ -776,7 +877,7 @@ padding-bottom: 30px !important;">
               </li>
 
               <li class="nav-item">
-                  <a class="nav-link" data-bs-toggle="tab" href="#viq-instructions"> VMC Centers  </a>
+                  <a class="nav-link" data--bs-toggle="tab" href="#viq-instructions"> VMC Centers  </a>
               </li>
           </ul>
       </div>
@@ -903,18 +1004,9 @@ padding-bottom: 30px !important;">
           <script src="js/google-map.js"></script>
           <script src="js/main.js"></script>
 
-          <!-- Global site tag (gtag.js) - Google Analytics -->
-          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-23581568-13');
-          </script>
-
           
       
+       
         <script src="https://code.jivosite.com/widget/tT4NtKH0ck" async></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin=" anonymous"></script>
         <script src="bootstrap/js/bootstrap.js"></script>
@@ -941,25 +1033,8 @@ padding-bottom: 30px !important;">
                 });
             });
         </script>
-        <script>
-            $(document).ready(function() {
-                $(window).scroll(function() {
-                    if ($(this).scrollTop() > 100) {
-                        $('#scroll').fadeIn();
-                    } else {
-                        $('#scroll').fadeOut();
-                    }
-                });
-                $('#scroll').click(function() {
-                    $("html, body").animate({
-                        scrollTop: 0
-                    }, 600);
-                    return false;
-                });
-            });
-        </script>
+
     
 </body>
-        
-<!-- Mirrored from preview.colorlib.com/theme/knuford/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Nov 2024 18:29:04 GMT -->
+
 </html>
