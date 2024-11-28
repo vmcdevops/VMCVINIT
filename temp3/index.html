@@ -38,6 +38,23 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
   <style>
+    .vinit-logo{
+        width: 87%;
+        padding-left: 0px;
+    }
+    .hero-wrap .slider-text .social-media {
+        text-transform: uppercase;
+    font-weight: 700;
+    font-size: 9px;
+    letter-spacing: 1px;
+    color: #5c5b5b;
+    text-transform: none;
+    text-align: center;
+    font-weight: 200;
+    padding-left: 112px !important;
+    font-style: italic;
+    padding-top: 5px !important;
+}
    #register-button {
     position: static; /* Default position */
     width: 100%; /* Full width */
@@ -47,11 +64,15 @@
     transition: position 0.3s, bottom 0.3s; /* Smooth transition */
 }
 
-#register-button.fixed {
-    position: fixed; /* Fix the button when scrolling */
-    bottom: 0px; /* Stick to the bottom of the viewport */
-    left: 0; /* Align to the left */
+
+    #register-button.fixed {
+    position: fixed;
+    top: 37%;
+    right: -65px;
+    transform: rotate(-90deg);
+    width: 13% !important;
 }
+
     .why li {
     margin-bottom: 10px;
     text-align: justify;
@@ -251,6 +272,22 @@ color-mix(in srgb, var(--heading-color), transparent 25%);
     margin-top: 0px !important;
 }
 @media (min-width: 320px) and (max-width: 480px) {
+    .vinit-logo{
+        width: 59%;
+        padding-left: 0;
+    }
+    .hero-wrap .slider-text .social-media {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #000;
+    text-transform: none;
+    text-align: center;
+    font-weight: 200;
+    padding-left: 0px !important;
+    font-style: italic;
+}
     .hero-wrap .slider-text .text {
     position: relative;
     z-index: 0;
@@ -272,6 +309,7 @@ color-mix(in srgb, var(--heading-color), transparent 25%);
         box-shadow: 1px 2px 9px #ccc !important;
         padding: 10px;
         display: none;
+    }
    .vinit-head {
         font-size: 16px !important;
         font-weight: bold;
@@ -303,9 +341,13 @@ color-mix(in srgb, var(--heading-color), transparent 25%);
 }
 }
 @media only screen and (min-width: 768px) {
+    .vinit-logo{
+        width: 65%;
+        padding-left: 65px;
+    }
     
     .vinit-head {
-        font-size: 16px !important;
+        font-size: 24px !important;
         font-weight: bold;
         font-family: 'cera regular';
         color: #000;
@@ -397,25 +439,30 @@ margin-top: 0px;"><i class="fas fa-phone"></i> &nbsp; 9818795768 | 8585947897</a
     <div class="container">
       <div class="row no-gutters slider-text align-items-start mt-4 ">
        <div class="col-lg-7 device-center">
-        <div class="text mt-5" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-          <p class="mb-4">
+        <div class="text mt-5 pt-3" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+          <p class="mb-4 pt-4">
             <img src="images/vinit-date3.png" style="width: 50%;"/>
           </p>
           <span class="text-dark">Fuel Your  </span>
           <span class="subheading"><span style="color: blue;"> JEE</span>/ <span style="color: red;">NEET</span></span>
           <span class="text-dark">ambition - Awaken the Winner in You with VINit</span>
-          <h1 class="">
-           <img src="images\vinit-logo2.png" style="width: 65%;" />
+          <h1 class="mt-4 mb-3">
+           <img src="images\vinit-logo.png" class="vinit-logo"  />
           </h1>
           <div class="w-md-75 w-100">
             <h2 class="mb-4 vinit-head" >Vidyamandir Intellect National Incentive Test</h2>
             <p><a href="#" class="btn btn-primary p-4 py-3"  style="    padding: 10px !important;    padding: 10px !important;
-                background: #19185e !important;
-                color: #fff !important;">8<sup>th</sup>, 15<sup>th</sup> & 22<sup>nd</sup>December 2024 <span class="ion-ios-arrow-round-forward"></span></a> <a href="#" class="btn btn-white p-4 py-3 ms-lg-2" style="    padding: 10px !important;
+                   background: #19185e !important;
+    color: #fff !important;
+    font-size: 20px;
+    padding: 7px 40px !important;
+    line-height: 31px;">8<sup>th</sup> | 15<sup>th</sup> | 22<sup>nd</sup> <br/>December 2024 <span class="ion-ios-arrow-round-forward"></span></a> <a href="#" class="btn btn-white p-4 py-3 ms-lg-2" style="    padding: 10px !important;
                 background: #ffc812 !important;
                 border: 0px !important;
-                color: #000 !important;">Mega Cash Incentives <br/><span class="ion-ios-arrow-round-forward" style="font-size: 13px;color: #fff;">Scholarships upto 100%*</span></a></p>
-            <p class="social-media mt-5 d-none"><a href="registration-info.html" style=" "><span class="ion-ios-add"></span> Registration Information</a> <a href="test-instructions.html"><span class="ion-ios-add"></span> Test Instructions</a> <a href="vinit-syllabus.html"><span class="ion-ios-add"></span> Sample Paper</a></p>
+                color: #000 !important;  font-size: 18px;
+    padding: 7px 40px !important;
+    line-height: 31px;">Mega Cash Incentives <br/><span class="ion-ios-arrow-round-forward" style="font-size: 13px;color: #1f1e5b;">Scholarships upto 100%*</span></a></p>
+            <p class="social-media">*Terms & Conditions applied</p>
           </div>
          
         </div>
@@ -659,8 +706,7 @@ margin-top: 0px;"><i class="fas fa-phone"></i> &nbsp; 9818795768 | 8585947897</a
                   <div class="icon flex-shrink-0"><i class="fas fa-briefcase"></i></div>
                   <div>
 
-                      <p class="description mt-0">The <b>Vidyamandir Intellect National Incentive Test</b> assesses the science and mathematics aptitude of JEE & NEET aspirants. Held annually on a National Level, It identifies strengths, weaknesses, exam temperament, and
-                          analytical thinking. This test offers Mega Fee incentives and academic benefits, providing a vital starting point for a bright future. </p>
+                      <p class="description mt-2">A unique <b>Admission-cum-Scholarship Test</b> that allows students to experience VMC's unparalleled ability to precisely analyse their Weaknesses, areas of Improvement, Subject-specific Analysis, National Standing, and how to progress toward their JEE & NEET goals.</p>
                   </div>
               </div>
           </div>
@@ -690,7 +736,7 @@ margin-top: 0px;"><i class="fas fa-phone"></i> &nbsp; 9818795768 | 8585947897</a
         <div class="service-item item-indigo position-relative">
             <i class="fas fa-briefcase icon"></i>
             <div>
-                <h3>Mega Cash Incentive </h3>
+                <h3>Mega Cash Incentives </h3>
 
             </div>
         </div>
@@ -1435,7 +1481,7 @@ padding-bottom: 30px !important;">
         REGISTER NOW
     </a>
 </div>
-<footer id="footer" class="footer position-relative light-background" style="padding-bottom: 0px; margin-bottom: 30px;">
+<footer id="footer" class="footer position-relative light-background" style="padding-bottom: 0px; margin-bottom: 0px;">
 
 
 

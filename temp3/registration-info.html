@@ -38,6 +38,24 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
   <style>
+     #register-button {
+    position: static; /* Default position */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensures it stays above other elements */
+    text-align: center; /* Center text */
+    padding: 10px 0; /* Add some padding for better appearance */
+    transition: position 0.3s, bottom 0.3s; /* Smooth transition */
+}
+
+
+    #register-button.fixed {
+    position: fixed;
+    top: 37%;
+    right: -65px;
+    transform: rotate(-90deg);
+    width: 13% !important;
+}
+
     a {
     color: #000;
      text-decoration: none !important;
@@ -736,6 +754,13 @@ margin-top: 0px;"><i class="fas fa-phone"></i> &nbsp; 9818795768 | 8585947897</a
     
     
     </main>
+
+    <a href="#register" class="d-block d-sm-none d-md-none d-lg-none  btn bg-danger rounded-0 w-100 position-sticky bottom-0 mt-3 text-white" style="    background: #bf0202 !important;z-index: 2;"> REGISTER NOW  </a>
+<div>
+    <a href="#register" id="register-button" class=" btn bg-danger rounded-0 w-100 text-white d-none d-md-block d-sm-block d-lg-block" style="background: #bf0202 !important;">
+        REGISTER NOW
+    </a>
+
     
     <footer id="footer" class="footer position-relative light-background" style="padding-bottom: 0px;">
     
@@ -793,6 +818,19 @@ margin-top: 0px;"><i class="fas fa-phone"></i> &nbsp; 9818795768 | 8585947897</a
 </script>
 
 
+<script>
+  document.addEventListener("scroll", function () {
+      const button = document.getElementById("register-button");
+      const scrollThreshold = 400; // Change to the scroll amount you want
+      if (window.scrollY > scrollThreshold) {
+          button.classList.add("fixed");
+      } else {
+          button.classList.remove("fixed");
+      }
+  });
+  
+  </script>
+
 </body>
 
-</html>s
+</html>
