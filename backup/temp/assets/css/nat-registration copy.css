@@ -1,0 +1,159 @@
+.registration-form {
+    max-width: 480px;
+    margin: 25px auto;
+    border: 1px solid #343362;
+    padding: 20px !important;
+    background-color: #fecb29;
+    border-radius: 10px;
+}
+div#mobile_verification_div > div > h3 {
+    background: #343362;
+    color: #fff;
+    margin: -44px 8px 20px!important;
+    padding: 6px 20px!important;
+    display: inline-block;
+}
+.mobile_verification_div,#user_and_payment_info {
+  /* width: 50%; */
+  margin: auto;
+}
+
+.student_details {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.payment_summary {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.payment_summary div {
+  background-color: #ecf2f8;
+}
+
+.margin-0 {
+  margin: 0px !important;
+}
+
+.padding-0 {
+  padding: 0px !important;
+}
+
+.margin-top-10 {
+  margin-top: 10px !important;
+}
+
+.margin-top-15 {
+  margin-top: 15px !important; 
+}
+
+.margin-top-20 {
+  margin-top: 20px !important;
+}
+
+.margin-top-25 {
+  margin-top: 25px !important;
+}
+
+.margin-top-30 {
+  margin-top: 30px !important;
+}
+
+.margin-bottom-10 {
+  margin-bottom: 10px !important;
+}
+
+.margin-bottom-15 {
+  margin-bottom: 15px !important; 
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px !important;
+}
+
+.margin-bottom-25 {
+  margin-bottom: 25px !important;
+}
+
+.margin-bottom-30 {
+  margin-bottom: 30px !important;
+}
+
+.height-0 {
+  height: 0px;
+  overflow: hidden;
+}
+
+.validation_error {
+  color: red;
+}
+
+.button-nat-destructive {
+  background-color: none;
+  border: none; 
+  color: #5b5a7b; 
+  padding: 4px 12px; 
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+.button-nat {
+  background-color: #343362;
+  border: none; 
+  color: white; 
+  padding: 4px 12px; 
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+.pay-button-nat {
+  background-color: #343362;
+  border: none; 
+  color: white; 
+  padding: 12px 24px; 
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+.pay-button-nat:disabled {
+  background-color: #5b5a7b;
+}
+
+.btn-register {
+  background: #ffcc29;
+  color: #3b3a67;
+  font-weight: bold;
+  transition: .2s ease all;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 24px;
+  border-radius: 7px;
+  padding: 10px 20px;
+  margin: .7em 0 1em 0;
+}
+
+.btn-register:hover {
+  background: #3b3a67;
+  color: #fff;
+}
+
+.select-option {
+  width: 320px;
+  text-align-last: center;
+  padding: 4px;
+}
+
+@media(max-width:768px){
+  .registration_div {
+    width: 100%;
+  }
+  .mobile_verification_div,#user_and_payment_info {
+    width: 100%;
+    margin: auto;
+  }
+}
