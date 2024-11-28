@@ -1,11 +1,4 @@
-/*
- * slide-nav 1.0.1
- * ES6 Vanilla.js navigation plugin to simple use on one-page websites.
- * https://github.com/qmixi/slide-nav
- *
- * Copyright (C) 2017 - A project by Piotr Kumorek
- * Released under the MIT license.
-*/
+
 
 'use strict';
 
