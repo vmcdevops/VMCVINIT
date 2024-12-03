@@ -1,0 +1,9 @@
+﻿User-agent: * 
+Disallow: /private/ 
+Disallow: /temp/ 
+Disallow: /admin/ 
+Disallow: /cgi-bin/
+Disallow: /tag/
+
+
+Sitemap: https://www.vmcvinit.com/sitemap.xml
