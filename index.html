@@ -42,7 +42,6 @@
 
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/flaticon.css">
-  <link rel="stylesheet" href="css/tiny-slider.css">
   <link rel="stylesheet" href="css/glightbox.min.css">
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
@@ -62,8 +61,9 @@
   text-align: center;
 }
 
+
 .rounded-social-buttons .social-button {
-    color: #fff !important;
+    
   display: inline-block;
   position: relative;
   cursor: pointer;
@@ -76,7 +76,7 @@
   color: #fefefe;
   font-size: 1.5625rem;
   font-weight: normal;
-  line-height: 2em;
+  line-height: 43px;
   border-radius: 1.6875rem;
   transition: all 0.5s ease;
   margin-right: 0.25rem;
@@ -286,9 +286,29 @@ color-mix(in srgb, var(--background-color), transparent 15%);
     border-radius: 4px;
     padding: 4px 9px;
 }
-    a {
-    color: #000 !important;
+   a {
+    
      text-decoration: none !important;
+}
+.main-menu .nav-pills .nav-link {
+    border-radius: 0;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    padding: 15px 0;
+    border-bottom: transparent 4px solid;
+    font-family: cera bold;
+    position: relative;
+    font-size: 1.2rem;
+    color: #000 !important;
+}
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+    font-size: 15px;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: rgb(40 37 37 / 70%);
+    font-weight: 500;
 }
      .foun{
             text-decoration: none !important;
@@ -392,6 +412,16 @@ color-mix(in srgb, var(--heading-color), transparent 25%);
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+    .hero .hero-bg img {
+        display: none;
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
     .vinit-logo{
         width: 59%;
         padding-left: 0;
@@ -486,7 +516,7 @@ color-mix(in srgb, var(--heading-color), transparent 25%);
     text-orientation: mixed;
     transform: rotate(360deg);
     position: absolute;
-    right: 32%;
+    right: 21%;
     bottom: 1%;
     transform-origin: top left;
     font-size: 17px !important;
@@ -922,7 +952,7 @@ margin-top: 0px;"><i class="fas fa-phone"></i> &nbsp; +91 8002007500</a>
                   <div class="icon flex-shrink-0"><i class="fas fa-briefcase"></i></div>
                   <div>
 
-                      <p class="description mt-2">A unique <b>Admission-cum-Scholarship Test</b> that allows students to experience VMC's unparalleled ability to precisely analyse their Weaknesses, areas of Improvement, Subject-specific Analysis, National Standing, and how to progress toward their JEE & NEET goals.</p>
+                      <p class="description mt-2">VMC's VINIT is a unique <b>Admission-cum-Scholarship Test</b> designed to help students identify their weaknesses and areas of improvement while evaluating their subject-specific skills through detailed performance analysis. This isn’t just an ordinary test; it’s your chance to WIN BIG with mega incentives and scholarships of up to 100%. VINIT also opens the door to join VMC’s transformative Classroom and Online Programs, guiding you toward your JEE and NEET goals.</p>
                   </div>
               </div>
           </div>
@@ -1037,7 +1067,7 @@ margin-top: 0px;"><i class="fas fa-phone"></i> &nbsp; +91 8002007500</a>
             <h2>Registration Information</h2>
             <p style="font-size: 11px;
     line-height: 23px;">Here, you will find all the necessary details to guide you through the registration process smoothly.</p>
-            <p class="mt-3"><a href="registration-info.html" class="mt-2" style=" background: #ccc;
+            <p class="mt-3"><a href="registration-info.html" class="mt-2" style=" background: #ebe9e9;
                 padding: 8px;
                 border-radius: 42px;
                display: inline-block;">Read more <span class="fa fa-long-arrow-right"></span></a></p>
@@ -1051,7 +1081,7 @@ margin-top: 0px;"><i class="fas fa-phone"></i> &nbsp; +91 8002007500</a>
             <h2>Test Instructions</h2>
             <p style="font-size: 11px;
     line-height: 23px;">Please read the following guidelines carefully to ensure a smooth and hassle-free testing experience.</p>
-            <p class="mt-3"><a href="test-instructions.html" class="mt-2" style=" background: #ccc;
+            <p class="mt-3"><a href="test-instructions.html" class="mt-2" style=" background: #ebe9e9;
                 padding: 8px;
                 border-radius: 42px;
                display: inline-block;">Read more <span class="fa fa-long-arrow-right"></span></a></p>
@@ -1065,7 +1095,7 @@ margin-top: 0px;"><i class="fas fa-phone"></i> &nbsp; +91 8002007500</a>
             <h2>Sample Paper & Syllabus</h2>
             <p style="font-size: 11px;
     line-height: 23px;"> Practice is the key to success in any examination, and sample papers are an excellent resource.</p>
-            <p class="mt-3"><a href="papers-syllabus.html" class="mt-2" style=" background: #ccc;
+            <p class="mt-3"><a href="papers-syllabus.html" class="mt-2" style=" background: #ebe9e9;
                 padding: 8px;
                 border-radius: 42px;
                display: inline-block;">Read more <span class="fa fa-long-arrow-right"></span></a></p>
@@ -1494,7 +1524,7 @@ padding-bottom: 30px !important;">
 
 
           <div class="shadow pt-sm-5 pt-3 tab-pane border rounded-md-4  active show" id="programs">
-              <p class="text-primary cera-medium h2 text-uppercase mb-sm-5 mb-3 text-center"> Our Programs </p>
+              <p class="cera-medium h2 text-uppercase mb-sm-5 mb-3 text-center" style="color: #0b1f93;"> Our Programs </p>
               <div class="px-sm-4 px-3 mb-3 mx-auto mt-4">
                   <div class="row justify-content-center g-4 mx-auto mb-4 text-justify pt-3" style="font-family: 'Cera Regular';">
 
@@ -1507,7 +1537,7 @@ padding-bottom: 30px !important;">
               </div>
           </div>
           <div class="shadow pt-sm-5 pt-3 tab-pane border rounded-md-4" id="samplePaper2">
-              <p class="text-primary cera-medium h2 text-uppercase mb-sm-5 mb-3 text-center"> Our Results </p>
+              <p class=" cera-medium h2 text-uppercase mb-sm-5 mb-3 text-center" style="color: #0b1f93;"> Our Results </p>
               <div class="px-sm-4 px-3 mb-3 mx-auto mt-4">
                   <div class="row justify-content-center g-4 mx-auto mb-4 text-justify pt-3" style="font-family: 'Cera Regular';">
 
@@ -1522,7 +1552,7 @@ padding-bottom: 30px !important;">
 
 
           <div class="shadow p-4 p-md-5 tab-pane border rounded-md-4" id="viq-instructions">
-              <p class="text-primary cera-medium h2 text-uppercase mb-sm-5 mb-3 text-center"> VMC Centers </p>
+              <p class="cera-medium h2 text-uppercase mb-sm-5 mb-3 text-center" style="color: #0b1f93;"> VMC Centers </p>
               <div class="px-sm-4 px-3 mb-3 mx-auto mt-4">
                   <div class="row justify-content-center g-4 mx-auto mb-4 text-justify pt-3" style="font-family: 'Cera Regular';">
 
@@ -1703,13 +1733,13 @@ padding-bottom: 30px !important;">
 
 <div class="container copyright text-center">
   <p>© <span>Copyright</span> <strong class="px-1 sitename">vidyamandir</strong><span>All Rights Reserved</span></p>
-  <div class="credits d-none">
+  <div class="credits mt-3">
     <div class="rounded-social-buttons">
-        <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a class="social-button facebook" href="https://www.facebook.com/VmcLearning/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a class="social-button twitter" href="https://x.com/i/flow/login?redirect_after_login=%2Fvmclearning" target="_blank"><img src="https://www.vidyamandir.com/assets/images/twitter-X.png" style="width: 20px;height: 20px;"/></a>
+        <a class="social-button linkedin" href="https://www.linkedin.com/company/vidyamandir-classes/posts/?feedView=all" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a class="social-button youtube" href="https://www.youtube.com/channel/UConPUBSiB7UkdMH2nkYzxAA" target="_blank"><i class="fab fa-youtube"></i></a>
+      
     </div>
 
   </div>
