@@ -412,6 +412,19 @@ color-mix(in srgb, var(--heading-color), transparent 25%);
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+    .vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(360deg);
+    position: absolute;
+    right: 14%  !important;
+    bottom: 1%;
+    transform-origin: top left;
+    font-size: 17px !important;
+    font-family: Arial, sans-serif;
+    color: #b1abab !important;
+    z-index: 3;
+}
     .hero .hero-bg img {
         display: none;
     position: absolute;
