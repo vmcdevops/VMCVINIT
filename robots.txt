@@ -1,0 +1,12 @@
+# Allow all search engines to crawl most of the content
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+Disallow: /assets/
+Disallow: /search/
+Disallow: /private/
+Disallow: /tmp/
+
+# Sitemap location
+Sitemap: https://www.vmcvinit.com/sitemap.xml

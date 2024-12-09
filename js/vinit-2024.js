@@ -1742,6 +1742,7 @@ function get_exam_test_id() {
     }
 }
 
+/**  surendra 09/12/2024 **/
 function startNATRegistrationProcess() {
     let validationError = validateFields();
     if (validationError) {
@@ -1768,15 +1769,52 @@ function startNATRegistrationProcess() {
     let select_center = document.getElementById("select_center").value.trim();
     let select_course = document.getElementById("select_course").value.trim();
 
-    var apiurlPath = "/check_duplicate_nat_registrations?student_name=" + student_name + "&student_dob=" + student_dob + "&student_email=" + student_email + "&student_phone=" + student_phone + "&amount=" + userCartSummery.total_amount + '&exam_test_id=' + exam_test_id + '&select_center=' + select_center + '&select_course=' + select_course + "&exam_type=" + examType;
 
 
-    callWPApi("GET", apiurlPath, check_duplicate, {}, null);
 
+    let json = {
+        "email": student_email
+       
+    };
+    var jsonStr = JSON.stringify(json);
+    var headers = {
+        "Content-Type": "application/json",
+        SupportedApiVersion: "1",
+    };
+    callLaravelApi("POST", "/api/emaicheckapi", checkEmailExistResponse, headers, jsonStr);
+
+   
 
 }
 
+function checkEmailExistResponse(responseText)
+{
+    var responseEmail = JSON.parse(responseText);
+     if(responseEmail.status == 200)
+     {
 
+        var student_name = document.getElementById("fullname").value.trim();
+
+    var student_dob = '';
+
+    var student_email = document.getElementById("email").value.trim();
+
+    var student_phone = document.getElementById("mobile_input").value.trim();
+
+    let exam_test_id = get_exam_test_id();
+
+    let select_center = document.getElementById("select_center").value.trim();
+    let select_course = document.getElementById("select_course").value.trim();
+         var apiurlPath = "/check_duplicate_nat_registrations?student_name=" + student_name + "&student_dob=" + student_dob + "&student_email=" + student_email + "&student_phone=" + student_phone + "&amount=" + userCartSummery.total_amount + '&exam_test_id=' + exam_test_id + '&select_center=' + select_center + '&select_course=' + select_course + "&exam_type=" + examType;
+         callWPApi("GET", apiurlPath, check_duplicate, {}, null);
+
+     }else{
+        document.getElementById("email_error").innerHTML = "Email is not verified, please use other email";
+        return false;
+     }
+}
+
+/** End  surendra 09/12/2024 **/
 
 function check_duplicate(responseText) {
 
