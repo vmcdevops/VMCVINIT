@@ -558,7 +558,7 @@ function natDateOptionSelected() {
             //VINIT
             if (selectedNatDate.id == 437 || selectedNatDate.id == 438 || selectedNatDate.id == 439 ||
                 selectedNatDate.id == 440 || selectedNatDate.id == 441 || selectedNatDate.id == 442) {
-                couponCodeGlobal = 'VINit99';
+                couponCodeGlobal = 'VINITOR99';
                 applyCouponWithCouponCode(couponCodeGlobal);
                 document.getElementById("couponCode").disabled = dalse;
                 document.getElementById("couponCode").value = couponCodeGlobal;
@@ -568,7 +568,7 @@ function natDateOptionSelected() {
         if (select_test_mode.value == "Offline" || select_test_mode.value == "offline") {
             //VINIT+
             if (selectedNatDate.id == 437 || selectedNatDate.id == 441) {
-                couponCodeGlobal = 'VINit49';
+                couponCodeGlobal = 'VINITOR49';
                 applyCouponWithCouponCode(couponCodeGlobal);
                 document.getElementById("couponCode").disabled = dalse;
                 document.getElementById("couponCode").value = couponCodeGlobal;
@@ -604,7 +604,7 @@ function natDateOptionSelected() {
             //VINIT
             if (selectedNatDate.id == 437 || selectedNatDate.id == 438 || selectedNatDate.id == 439 ||
                 selectedNatDate.id == 440 || selectedNatDate.id == 441 || selectedNatDate.id == 442) {
-                couponCodeGlobal = 'VINit99';
+                couponCodeGlobal = 'VINITOR99';
                 applyCouponWithCouponCode(couponCodeGlobal);
                 document.getElementById("couponCode").disabled = dalse;
                 document.getElementById("couponCode").value = couponCodeGlobal;
@@ -614,7 +614,7 @@ function natDateOptionSelected() {
         if (select_test_mode.value == "Offline" || select_test_mode.value == "offline") {
             //VINIT+
             if (selectedNatDate.id == 437 || selectedNatDate.id == 441) {
-                couponCodeGlobal = 'VINit49';
+                couponCodeGlobal = 'VINITOR49';
                 applyCouponWithCouponCode(couponCodeGlobal);
                 document.getElementById("couponCode").disabled = dalse;
                 document.getElementById("couponCode").value = couponCodeGlobal;
@@ -944,7 +944,7 @@ function getCartSuccess(responseText) {
         defaultCouponApplied = true;
         if (is_app) {
             if (examType == 6) {
-                document.getElementById("couponCode").value = "VINit99";
+                document.getElementById("couponCode").value = "VINITOR99";
             }
             if (examType == 2) {
                 document.getElementById("couponCode").value = 'NAT199';
@@ -960,7 +960,7 @@ function getCartSuccess(responseText) {
             document.getElementById("couponCode").value = 'NAT499';
 
         } else {
-            document.getElementById("couponCode").value = 'VINit99';
+            document.getElementById("couponCode").value = 'VINITOR99';
         }
         applyCoupon();
     }
