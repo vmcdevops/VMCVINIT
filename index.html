@@ -330,16 +330,17 @@ color-mix(in srgb, var(--background-color), transparent 15%);
             color: #000;
         }
         
-    .hero .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        opacity: 0.8;
-        background: #ffffff;
-        z-index: -1;
-    }
+        .hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.9;
+    background: #30334b;
+    z-index: 1;
+    color: #ffcf13;
+}
     .btn {
     padding: 9px 12px;
     cursor: pointer;
@@ -550,6 +551,35 @@ color-mix(in srgb, var(--heading-color), transparent 25%);
     color: #b1abab !important;
     z-index: 3;
     }
+    .form-hide {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            line-height: 200px; /* Center text vertically */
+            font-size: 20px;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .card:hover .overlay {
+            opacity: 1;
+        }
   </style>
 
 <!-- Google tag (gtag.js) -->
@@ -868,6 +898,26 @@ margin-top: 0px;"><i class="fas fa-phone"></i> &nbsp; +91 8002007500</a>
     
     
                     </div>
+                </div>
+                <div class="overlay">
+                    <div class="col-md-12 text-center">
+                        <h2 class="mb-3"  style="font-size: 26px;
+                        background: #facc1a;
+                        color: #000;
+                        line-height: 49px;">Registeration Closed for VINIT</h2> 
+                    <p class="text-white mb-3">
+                        You Can Register for 
+                    </p>
+                    <h2 class="mb-5">
+                        <img src="https://vmcnat.com/assets/img/NAT-lg.png" style="width:50%"/>
+                    </h2>
+                    <p>
+                        <a href="https://vmcnat.com/" target="_blank" style="background-color: #d00101;
+                        color: #fff;
+                        padding: 10px;
+                        border-radius: 44px;
+                        opacity: 1;">Click here to Register</a>
+                    </p>
                 </div>
             </div>
           </div>
